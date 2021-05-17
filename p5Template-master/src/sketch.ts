@@ -5,13 +5,9 @@
 const gui = new dat.GUI()
 const params = {
     Ellipse_Size: 30,
-    Vitesse : 0,
     Download_Image: () => save(),
-    Nombre : 0,
 }
 gui.add(params, "Download_Image")
-gui.add(params, "Vitesse",1,15,1)
-gui.add(params, "Nombre",0,30,1)
 let img
 
 // -------------------
@@ -57,7 +53,7 @@ function setup() {
         token: "+p4wo2Qdk9YlHw+Po03Tfw==",*/
       });
 
-    for (let i = 0; i<50; ++i){
+    for (let i = 0; i<200; ++i){
       const z = []
       for (let i = 0; i<512; i++){
           z[i] = random(-0.5,0.5);
